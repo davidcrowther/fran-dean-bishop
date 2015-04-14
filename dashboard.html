@@ -1,0 +1,304 @@
+<!DOCTYPE html >
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head>
+  <title>Dashboard page</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen"/> 
+  <link href="css/dashboard.css" rel="stylesheet" media="screen"/>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/admin_logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-left">
+        <li class="title"> <span class="icon-list-big"></span> Dashboard </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="btn btn-success" href="#">Upgrade Membership</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li> 
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<aside class="sidebar">
+  <ul class="nav nav-list">
+    <li><a href="#">
+      <span class="value">
+        <span class="icon-list-small"></span>Dashboard
+      </span>
+      <span class="title">Manage your Dashboard</span>
+    </a></li>
+    <li><a href="#">
+      <span class="value">
+        <span class="icon-plus"></span> Add New Entry
+      </span>
+      <span class="title">Add a new entry</span>
+    </a></li>
+    <li><a href="#">
+      <span class="value">
+        <span class="icon-search"></span>Search Groups        
+      </span>
+      <span class="title">Find your group</span>
+    </a></li>
+    <li><a href="#">
+      <span class="value">
+        <span class="icon-chat"></span>Classroom
+      </span>
+      <span class="title">Visit your classroom</span>
+    </a></li>
+    <li class="locked"><a href="#">
+      <span class="value">
+        <span class="icon-user-avatar"></span>My profile
+      </span>
+      <span class="title">Manage your profile</span>
+    </a></li>
+    <li class="locked"><a href="#">
+      <span class="value">
+        <span class="icon-resources"></span>Resources
+      </span>
+      <span class="title">Find resources in your State</span>
+    </a></li>
+    <li class="locked"><a href="#">
+      <span class="value">
+        <span class="icon-bag"></span>My Fit Bag
+      </span>
+      <span class="title">Some text here</span>
+    </a></li>
+    <li class="locked"><a href="#">
+      <span class="value">
+        <span class="icon-rss"></span>Rss
+      </span>
+      <span class="title">News feed</span>
+    </a></li>
+    <li class="locked"><a href="#">
+      <span class="value">
+        <span class="icon-charts"></span>Leaderboard
+      </span>
+      <span class="title">View global rankings</span>
+    </a></li>
+  </ul><!-- /.nav nav-list -->
+</aside><!-- /.sidebar -->
+
+<section id="content" role="main">
+    
+    <div class="notification-area">
+      <div class="alert alert-warning">
+        <p>Tap into local resources and fitness communities by <a href="#">upgrading your membership!</a></p>
+      </div><!-- /.alert alert-warning -->
+    </div><!-- /.notification-area -->
+
+    <div class="stats-area"> 
+        <div class="row">
+          <div class="col-md-4">
+            <div class="well well-green">
+              <i class="icon-from-greenarea"></i>
+              <p class="value">0</p><!-- /.value -->
+              <p class="title">Calories Burned Today</p><!-- /.title -->
+              <p class="info-area">What is this? <span class="icon-question" data-toggle="tooltip" title="tooltip"></span></p><!-- /.info-area -->
+            </div><!-- /.well well-green -->
+          </div><!-- /.col-xs-4 -->
+          <div class="col-md-4">
+            <div class="well well-blue">
+              <i class="icon-from-bluearea"></i>
+              <p class="value">0</p><!-- /.value -->
+              <p class="title">Calories Eaten Today</p><!-- /.title -->
+              <p class="info-area">What is this? <span class="icon-question" data-toggle="tooltip" title="tooltip"></span></p><!-- /.info-area -->
+            </div><!-- /.well well-green -->
+          </div><!-- /.col-xs-4 -->
+          <div class="col-md-4">
+            <div class="well well-red">
+              <i class="icon-from-redarea"></i>
+              <p class="value">1432</p><!-- /.value -->
+              <p class="title">Daily Calories Required</p><!-- /.title -->
+              <p class="info-area">What is this? <span class="icon-question" data-toggle="tooltip" title="tooltip"></span></p><!-- /.info-area -->
+            </div><!-- /.well well-green -->
+          </div><!-- /.col-xs-4 -->
+        </div><!-- /.row --> 
+    </div><!-- /.stats-area -->
+
+    
+    <div class="summary_area">
+      <div class="tabpanel">
+        
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#activity_log" aria-controls="activity_log" role="tab" data-toggle="tab">Activity Log</a></li>
+          <li role="presentation"><a href="#nutrition_log" aria-controls="nutrition_log" role="tab" data-toggle="tab">Nutrition Log</a></li>
+          <li role="presentation"><a href="#leaderboard" aria-controls="messages" role="tab" data-toggle="tab">Leaderboard</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="activity_log">
+
+            <h3 class="title"> Fitness &amp; Activity Log <span class="icon-question-gray" data-toggle="tooltip" title="tooltip"></span></h3><!-- /.title -->
+
+            <div class="table-responsive">
+              
+              <table class="table">
+                <thead>
+                  <th class="w1">Entry Time</th>
+                  <th class="w2">Activity</th>
+                  <th class="w3">Calories Burned</th>
+                  <th class="w4 class="strong""></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="strong">3 years ago</td>
+                    <td>aerobic, general</td>
+                    <td class="strong">347</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">9 months ago</td>
+                    <td>carpentry, general</td>
+                    <td class="strong">62</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>aerobic, low impact</td>
+                    <td class="strong">645</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>active, vigorous effort</td>
+                    <td class="strong">80</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>airplane repair</td>
+                    <td class="strong">493</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>basketball, shooting baskets</td>
+                    <td class="strong">540</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>active, vigorous effort</td>
+                    <td class="strong">167</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>aerobic, high impact</td>
+                    <td class="strong">778</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>aerobic, general</td>
+                    <td class="strong">29</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="strong">11 months ago</td>
+                    <td>aerobic, step, with 10 â€“ 12 inch step</td>
+                    <td class="strong">89</td>
+                    <td><span class="icon-close"></span></td>
+                  </tr>
+                </tbody>
+              </table><!-- /.table table-bordered -->
+
+            </div><!-- /.table-responsive -->
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="nutrition_log"> </div> 
+          <div role="tabpanel" class="tab-pane fade" id="leaderboard"> </div> 
+        </div>
+
+      </div><!-- /.tabpanel -->
+    </div><!-- /.summary-area -->
+
+ 
+</section><!-- /#content -->
+ 
+<!-- Modal -->
+<div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Upgrade Your Membership</h4>
+      </div>
+      <div class="modal-body">
+        <p class="info">An expanded personal profile, local resources and guides, special events and hangouts... all this and more with your MECKids Gold Membership. </p>
+        <p class="info"><i>Oh, and did we mention that it costs less than a fancy coffee?</i></p>
+        <form action="">
+          <div class="form-group">
+            <label for="">Name*</label>
+            <input required type="text" placeholder="Michelle" class="form-control" />
+          </div><!-- /.form-group -->  
+          <div class="form-group">
+            <label for="">Email**</label>
+            <input type="email" required placeholder="michelle.tafazoli@gmail.com" class="form-control" />
+          </div><!-- /.form-group -->  
+          <div class="well">
+            <p>Cost: <strong>$4.95</strong></p>
+          </div><!-- /.well -->
+          <button class="btn btn-success" type="submit"> Upgrade Membership </button>
+        </form>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>  
+<script>
+$( document ).ready(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('#popup').modal('show');
+  // $('.icon-close').on('click', function(event) {
+    // $(this).closest('tr').fadeOut('fast', function() {
+    //   $(this).remove();
+    // });
+  // });
+
+});
+</script>
+<!-- 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://0.s3.envato.com/files/240004/_xprecise/xprecise.min.js"></script>
+
+ -->
+
+</body>
+</html>
